@@ -1,0 +1,79 @@
+@import "variables";
+@import "base";
+@import "mixins";
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin-top: 10px;
+    font-family: $mainFontStyle;
+    background-color: $backgroundColor;
+}
+
+img{
+    max-width: 65%;
+}
+
+ul{
+    list-style: none;
+}
+
+.title{
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.about{
+    font-size: 4.0rem;
+}
+
+.book{
+    font-size: 3.5rem;
+}
+
+.find{
+    font-size: 3.0rem;
+}
+
+.blue{
+    color: $activeFontColor;
+}
+
+#find_text, #book_text, #about_text{
+    display: none;
+    font-size: 1rem;
+}
+
+
+@include mobile{
+    .about{
+        font-size: 4rem;
+    }    
+}
+
+@include tablet{
+
+    img{
+        max-width: 60%;
+    }
+    .title{
+        margin: 5px;
+    }
+
+    .about{
+        font-size: 5.5rem;
+    }
+
+    .book{
+        font-size: 4.5rem;
+    }
+
+    .find{
+        font-size: 3.5rem;
+    }
+}

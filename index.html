@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Optiker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    
+    <div class="container">
+    
+        <header class="row align-items-end">
+    
+            <div class="col-1">
+                <p>0.1</p>
+            </div>
+    
+            <div class="logo col-10 text-center">
+                <img src="images/optiker-logo.svg" alt="glasses logo with opitker written inside lenses">
+            </div>
+
+            <div class="col-1">
+                    
+            </div>
+    
+        </header>
+
+        <main>
+    
+            <section class="row two align-items-baseline">
+    
+                <div class="col-1">
+                    <p>0.2</p>
+                </div>
+    
+                <div class="about col-10 text-center">
+                    <h3 class="title about">About</h3>
+                    <p class="drop_down" id="about_text">Welcome to Optiker! We are an optician and boutique specializing in 
+                        Swedish modern fashion glasses. We have been on the scene since 1980 always bringing
+                        simple modern but timeless pieces to our customers. Swing on by for our full service eye
+                        examination and professional stylist making sure your glasses fit your lifestyle and personality 
+                        perfectly. 
+                    </p>
+                </div>
+                <div class="col-1">
+                    
+                </div>
+            </section>
+
+            <section class="row three align-items-baseline">
+                
+                <div class="col-1">
+                    <p>0.3</p>
+                </div>
+                
+                <div class="book col-10 text-center">
+                    <h3 class="title book">Book</h3>
+                        <ul class="drop_down" id="book_text">
+                            <li>Phone: 071234567</li>
+                            <li>Hours: mon-fri 10-18</li>
+                            <li>sat 11-13</li>
+                            <li>sun closed</li>
+                        </ul>
+                </div>
+
+                <div class="col-1">
+                    
+                </div>
+            
+            </section>
+
+            <section class=" row four align-items-baseline"
+            >
+            
+                <div class="col-1">
+                    <p>0.4</p>
+                </div>
+            
+                <div class="find_col col-10 text-center">
+                    <h3 id="title" class="title find">Find</h3>
+                        <ul class="drop_down" id="find_text">
+                            <li>Tulegatan 1</li>
+                            <li>12345</li>
+                            <li>Stockholm</li>
+                        </ul>
+                </div>
+
+                <div class="col-1">
+                    
+                </div>
+
+            </section>
+
+            <footer class="row five align-items-end">
+
+                <div class="col-1">
+                    <p>0.5</p>
+                </div>
+
+                <div class="by col-10 text-center">
+                    <p>By Michael Persson</p>
+                </div>
+
+                <div class="col-1">
+                    
+                </div>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $(".title").click(function(){
+                $(this).toggleClass("blue");
+            });
+        });
+
+        $(document).ready(function(){
+            $(".title").click(function(){
+                $(this).siblings(".drop_down").slideToggle("slow");
+            });
+        });
+       
+    </script>   
+       
+</body>
+</html>
